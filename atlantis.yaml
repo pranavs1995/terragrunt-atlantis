@@ -1,0 +1,21 @@
+version: 3
+projects:
+- dir: deploy/eu-west-1
+  workflow: terragrunt
+- dir: deploy/eu-west-2
+  workflow: terragrunt
+
+workflows:
+  terragrunt:
+    plan:
+      steps:
+      - env:
+          name: TERRAGRUNT_TFPATH
+          command: 'echo "terraform${ATLANTIS_TERRAFORM_VERSION}"'
+      - run: terragrunt plan -out $PLANFILE
+    apply:
+      steps:
+      - env:
+          name: TERRAGRUNT_TFPATH
+          command: 'echo "terraform${ATLANTIS_TERRAFORM_VERSION}"'
+      - run: terragrunt apply $PLANFILE
