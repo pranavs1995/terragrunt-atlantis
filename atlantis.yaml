@@ -13,11 +13,11 @@ workflows:
       steps:
       - env:
           name: TERRAGRUNT_TFPATH
-          command: 'echo "terraform${ATLANTIS_TERRAFORM_VERSION}"'
+          command: 'echo "/usr/local/bin/terraform"'
       - run: terragrunt plan -out $PLANFILE
     apply:
       steps:
       - env:
           name: TERRAGRUNT_TFPATH
-          command: 'echo "terraform${ATLANTIS_TERRAFORM_VERSION}"'
+          command: 'echo "/usr/local/bin/terraform"'
       - run: terragrunt apply $PLANFILE
