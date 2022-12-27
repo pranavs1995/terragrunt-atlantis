@@ -3,9 +3,9 @@ projects:
 - dir: deploy/eu-west-1
   workspace: dev
   workflow: terragrunt
-- dir: deploy/eu-west-2
-  workspace: dev
-  workflow: terragrunt
+# - dir: deploy/eu-west-2
+#   workspace: dev
+#   workflow: terragrunt
 
 workflows:
   terragrunt:
