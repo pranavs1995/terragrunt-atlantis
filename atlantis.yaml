@@ -1,8 +1,8 @@
 version: 3
 projects:
-- dir: deploy/dev/eu-west-1/services/web-server
+- dir: deploy/dev/eu-west-1/infrastructure/vpc
   workflow: terragrunt
-# - dir: deploy/eu-west-2
+# - dir: deploy/dev/eu-west-1/services/web-server
 #   workspace: dev
 #   workflow: terragrunt
 
