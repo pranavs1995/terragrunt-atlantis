@@ -8,7 +8,7 @@ workflows:
 access_control:
   policies:
     - tag_query: ''
-      plan: ['*']
+      plan: ['team:sre']
       apply: ['team:sre']
 
 apply_requirements:
