@@ -1,0 +1,5 @@
+when_modified:
+  file_patterns: ["**/*.hcl"]
+workflows:
+  - tag_query: ""
+    terragrunt: true
