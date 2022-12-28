@@ -8,8 +8,8 @@ workflows:
 access_control:
   policies:
     - tag_query: ''
-      plan: ['team:sre']
-      apply: ['team:sre']
+      plan: ['user:pranavs1995']
+      apply: ['user:pranavs1995']
 
 apply_requirements:
     checks:
