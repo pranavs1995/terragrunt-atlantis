@@ -6,20 +6,10 @@ workflows:
     terragrunt: true
 
 access_control:
-  enabled: true
-  apply_require_all_dirspace_access: true
-  plan_require_all_dirspace_access: false
-  terrateam_config_update: ['*']
-  unlock: ['*']
   policies:
     - tag_query: ''
-      apply: ['*']
-      apply_autoapprove: []
-      apply_force: []
-      apply_with_superapproval: []
-      plan: ['team:sre']
-      superapproval: []
-      unlock: ['team:sre']
+      plan: ['*']
+      apply: ['team:sre']
 
 apply_requirements:
     checks:
