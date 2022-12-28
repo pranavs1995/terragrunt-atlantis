@@ -92,7 +92,7 @@ resource "aws_launch_configuration" "dev" {
   security_groups      = [aws_security_group.security_group.id]
   iam_instance_profile = aws_iam_instance_profile.instance_profile.id
   enable_monitoring    = true
-  user_data = templatefile("${path.module}/lib/web_server.sh.tpl",
+  user_data = templatefile("${path.module}/lib/web_server.sh.tftpl",
     {
       service_name     = var.service
       environment      = var.environment

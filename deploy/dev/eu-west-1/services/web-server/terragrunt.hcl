@@ -3,7 +3,7 @@ include {
 }
 
 terraform {
-  source = "../../../../modules//web-server"
+  source = "../../../../../modules//web-server"
 
   extra_arguments "init_args" {
     commands = [
