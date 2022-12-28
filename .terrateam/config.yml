@@ -1,5 +1,6 @@
 when_modified:
   file_patterns: ["**/*.hcl"]
+  autoapply: false
 workflows:
   - tag_query: ""
     terragrunt: true
@@ -29,8 +30,3 @@ apply_requirements:
         status_checks:
             enabled: true
             ignore_matching: []
-
-cost_estimation:
-  enabled: true
-  provider: infracost
-  currency: USD
