@@ -7,7 +7,7 @@ workflows:
 
 access_control:
   policies:
-    - tag_query: ''
+    - tag_query: ""
       plan: ['user:pranavs1995']
       apply: ['user:pranavs1995']
 
