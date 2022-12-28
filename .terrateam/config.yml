@@ -1,0 +1,23 @@
+when_modified:
+  file_patterns: ["**/*.hcl"]
+  autoapply: false
+workflows:
+  - tag_query: ""
+    terragrunt: true
+
+access_control:
+  policies:
+    - tag_query: ""
+      plan: ['user:pranavs1995']
+      apply: ['user:pranavs1995']
+
+apply_requirements:
+    checks:
+        approved:
+            enabled: true
+            count: 1
+        merge_conflicts:
+            enabled: true
+        status_checks:
+            enabled: true
+            ignore_matching: []
