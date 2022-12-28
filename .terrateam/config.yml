@@ -10,14 +10,14 @@ access_control:
   apply_require_all_dirspace_access: true
   plan_require_all_dirspace_access: false
   terrateam_config_update: ['*']
-  unlock: ['*']
+  unlock: ['user:pranavs']
   policies:
     - tag_query: ''
       apply: ['*']
       apply_autoapprove: []
       apply_force: []
       apply_with_superapproval: []
-      plan: ['user:alice']
+      plan: ['*']
       superapproval: []
 
 apply_requirements:
