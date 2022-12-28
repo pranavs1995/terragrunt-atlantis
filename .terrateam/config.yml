@@ -17,7 +17,7 @@ access_control:
       apply_autoapprove: []
       apply_force: []
       apply_with_superapproval: []
-      plan: ['*']
+      plan: ['user:pranavsh1']
       superapproval: []
 
 apply_requirements:
