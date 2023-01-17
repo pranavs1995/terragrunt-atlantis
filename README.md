@@ -76,3 +76,4 @@ If you have already set up your credentials as environment variables,
 		Are you sure you want to run 'terragrunt apply' in each folder of the stack described above? (y/n) 
 
 		$ y 
+
